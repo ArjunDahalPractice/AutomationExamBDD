@@ -1,0 +1,4 @@
+Util\BasePage.class
+Page\ChangeBackgroundSkyBluePage.class
+Page\ChangeBackgroundWhitePage.class
+Util\BrowserFactory.class

@@ -1,2 +1,3 @@
-steps\BackgroundChangeTest.class
+steps\ChangeBackgroundSkyBlueTest.class
+steps\ChangeBackgroundWhiteTest.class
 runners\BackgroundRunnerTest.class

@@ -13,12 +13,6 @@ import org.openqa.selenium.WebDriver;
 
 public class BasePage {
 	
-	WebDriver driver;
-	
-	public BasePage(WebDriver driver) {
-		this.driver = driver;
-	}
-	
 	public static void implicitWait(WebDriver driver, int TimeOutUnit) {
 		driver.manage().timeouts().implicitlyWait(TimeOutUnit, TimeUnit.SECONDS);
 	}

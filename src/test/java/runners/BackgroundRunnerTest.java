@@ -6,8 +6,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "./src/test/java/features/backgroundChange.feature", glue = {
-		"steps" }, dryRun = false, monochrome = true, plugin = { "pretty", "html:test-output" })
+@CucumberOptions(
+			features = "./src/test/java/features", tags = {"@data1, @data2"}, 
+			glue = {"steps"},
+			dryRun = false, 
+			monochrome = true,
+			plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"}
+			)
 
 public class BackgroundRunnerTest {
 	

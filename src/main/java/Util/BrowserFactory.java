@@ -5,11 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BrowserFactory {
 	
-	static WebDriver driver;
+	public static WebDriver driver;
 	
 	static String baseUrl = "https://techfios.com/test/101/index.php";
 	
-	public static WebDriver lunchWebsite() {	
+	public static WebDriver lunchWebsite() {
 		System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(baseUrl);

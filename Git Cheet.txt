@@ -1,0 +1,32 @@
+GIT
+1. Create a local repository and upload project (FIRST TIME ONLY):
+     1. Open GitBash in the folder where the project is located,
+     2. Type> git init           		- This will create a repository in your computer,
+     3. Type> git status       			- This will show which branch you are on and file status
+     4. Type> git add .         		- This will include all files in the staging area to be committed,
+     5. Type> git commit -m "Message goes here" - This will commit all changes and include a message
+     6. Type> git remote add origin [project url] - This will link remote to your local repository
+     7. Type> git push -u origin master          - This will push your code to the remote master branch
+2. Clone the project (FIRST TIME):
+     1. Open GitBash in a folder of your choice,
+     2. Type> git init
+     3. Type> git clone [project url]         - This will clone the project into your local
+     4. Close GitBash and reopen GitBash in the new cloned folder
+     5. Type> mvn clean           
+     6. Type> mvn install
+     7. Open Eclipse, go to new, click Open Project From File System,
+     8. Browse to the project folder and click finish.
+3. Update code and create a pull request (FOR EVERY TEST CASE):
+     1. Open GitBash in the folder where the project is located,
+     2. Type> git branch            		- This will show you which branch you are on
+     3. Type> git pull                  	- If you are on master, this will pull the latest code
+     4. Type> git checkout -b [new branch name] - This will copy the master into your new branch
+     5. Go back to your project and write your code, then open GitBash again,
+     6. Type> git add .
+     7. Type> git commit -m "Message goes here"
+     8. Type> git checkout master               - This will move you to master branch
+     9. Type> git pull                          - This will pull the latest master
+     10. Type> git checkout [your branch name]  - This will move you back to your branch
+     11. Type> git merge master                 - This will bring new master code to yours
+     12. Type> git push -u origin [your branch name] - This will create new branch in remote and with your code,
+     13. Login to remote repository (GitHub or BitBucket) to manually create a pull request. 
